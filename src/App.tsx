@@ -1,3 +1,3 @@
-export const App = () => {
-    return <div>To-do List</div>
-}
+export const App: React.FC = () => {
+  return <div>To-do List</div>;
+};
