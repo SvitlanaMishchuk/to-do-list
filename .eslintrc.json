@@ -23,6 +23,7 @@
     "rules": {
         "semi": ["error", "always", { "omitLastInOneLineClassBody": true}],
         "@typescript-eslint/indent": ["error", 4],
+        "no-tabs": 0,
         "@typescript-eslint/semi": "off",
         "no-unexpected-multiline": "error",
         "react/react-in-jsx-scope": "off",
