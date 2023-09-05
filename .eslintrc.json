@@ -19,7 +19,7 @@
             "version": "detect"
         }
     },    
-    "ignorePatterns": ["**/*.html", "**/*.scss"],
+    "ignorePatterns": ["**/*.html", "**/*.css"],
     "rules": {
         "semi": ["error", "always", { "omitLastInOneLineClassBody": true}],
         "@typescript-eslint/indent": ["error", 4],
