@@ -1,0 +1,23 @@
+@import '../../styles/index.scss';
+
+.Header {
+    &-container {
+        height: 45px;
+        background-color: $charcoal;
+    }
+
+    &-logo {
+        margin: 0 15px;
+        color: $isabelline;
+    }
+
+    &-login {
+        background-color: $american-gold;
+        color: $isabelline;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 14px;
+        margin: 10px;
+    }
+}

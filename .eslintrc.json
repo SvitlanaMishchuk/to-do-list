@@ -22,6 +22,7 @@
     "ignorePatterns": ["**/*.html", "**/*.scss"],
     "rules": {
         "semi": ["error", "always", { "omitLastInOneLineClassBody": true}],
+        "@typescript-eslint/indent": ["error", 4],
         "@typescript-eslint/semi": "off",
         "no-unexpected-multiline": "error",
         "react/react-in-jsx-scope": "off",
