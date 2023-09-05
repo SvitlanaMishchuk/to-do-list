@@ -1,3 +1,5 @@
+import './App.scss';
+
 export const App: React.FC = () => {
-  return <div>To-do List</div>;
+  return <div className="App-container">To-do List</div>;
 };
