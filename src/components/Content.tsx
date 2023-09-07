@@ -1,10 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { ChangeEvent } from 'react';
 import { Button } from './Button';
+import { TASKS } from '../consts';
 
 export const Content: React.FC = () => {
-    const [tasks, setTasks] = useState<string[]>(['Buy groceries', 'Visit dentist', 'Update calendat meetings', 'Order present for brother']);
+    const [tasks, setTasks] = useState<string[]>([]);
     const [inputValue, setInputValue] = useState<string>('');
+
+    useEffect(() => {
+        const tasks = localStorage.getItem(TASKS);
+        if (tasks !== null && tasks !== undefined) {
+            setTasks(JSON.parse(tasks));
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem(TASKS, JSON.stringify(tasks));
+    }, [tasks]);
 
     const handleInputChange = (event: ChangeEvent<HTMLInputElement>): void => {
         const value: string = event.target.value;
