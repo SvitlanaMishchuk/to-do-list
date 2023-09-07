@@ -4,11 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'arsenic': '#433E49',
-        'dark-vanilla': '#DBC1AD',
-        'isabelline': '#F3E8EB'
+        'oxford-blue': '#333D51',
+        'equator': '#DFC15D',
+        'ghost': '#CBD0D8',
+        'spring-wood': '#F4F3EA'
       },
     },
+    fontFamily: {
+      'primary': ['Oswald']
+    }
   },
   plugins: [],
 }
