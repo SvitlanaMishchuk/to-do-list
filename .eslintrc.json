@@ -27,6 +27,17 @@
         "@typescript-eslint/semi": "off",
         "no-unexpected-multiline": "error",
         "react/react-in-jsx-scope": "off",
-        "@typescript-eslint/no-non-null-assertion": "off"
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "react/prop-types": "off",
+        "@typescript-eslint/member-delimiter-style": ["error", {
+            "multiline": {
+                "delimiter": "semi",
+                "requireLast": true
+            },
+            "singleline": {
+                "delimiter": "semi",
+                "requireLast": false
+            }
+        }]
     }
 }
